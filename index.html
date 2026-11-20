@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cerro Élégance — A serra, emoldurada para você</title>
+  <meta name="description" content="Bangalôs privativos em meio à mata, com ofurô no deck e a Serra de Taquaruçu inteira como vista.">
+  <meta name="theme-color" content="#ECE9DF">
+  <meta property="og:title" content="Cerro Élégance — A serra, emoldurada para você">
+  <meta property="og:description" content="Bangalôs privativos em meio à mata, com ofurô no deck e a Serra de Taquaruçu inteira como vista.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero/hero-floresta-poster.webp">
+  <link rel="stylesheet" href="design-system/tokens.css">
+  <link rel="stylesheet" href="design-system/assets/overview/assets/fonts.googleapis.com/css2__qf7d38554.css">
+  <link rel="stylesheet" href="design-system/assets/overview/assets/fonts.googleapis.com/css2__qed4d15e6.css">
+  <link rel="stylesheet" href="design-system/assets/overview/assets/fonts.googleapis.com/css2__q409fcde3.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header id="nav" class="nav">
+    <div id="navCapsule" class="nav-capsule">
+      <a class="brand" href="#topo">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+        <span class="brand-name">Cerro Élégance</span>
+      </a>
+      <p class="nav-place">Serra de Taquaruçu</p>
+      <a class="btn nav-cta" href="#reserva">
+        Reserve o seu refúgio
+        <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="frame">
+    <div class="shell">
+      <section class="hero" id="topo" aria-label="Cerro Élégance">
+        <div class="hero-media">
+          <video class="hero-video" autoplay muted loop playsinline preload="auto"
+                 poster="assets/hero/hero-floresta-poster.webp"
+                 aria-hidden="true">
+            <source src="assets/hero/hero-floresta.webm" type='video/webm; codecs="av01.0.08M.10"'>
+            <source src="assets/hero/hero-floresta.mp4" type="video/mp4">
+          </video>
+          <div class="hero-veil" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-copy" id="conteudo">
+          <img class="hero-logo" src="assets/brand/logo-branca.png" width="1024" height="247" alt="Cerro Élégance. Bangalôs e natureza.">
+          <p class="eyebrow">Serra de Taquaruçu · TO</p>
+          <h1>A serra, emoldurada para você.</h1>
+          <p class="lead">Bangalôs privativos em meio à mata, com ofurô no deck e a Serra de Taquaruçu inteira como vista.</p>
+          <a class="btn" id="reserva" href="#reserva">
+            Reserve o seu refúgio
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <section class="tempo" id="tempo" aria-labelledby="tempo-title">
+    <div class="tempo-bloom tempo-bloom-a" data-bloom aria-hidden="true"></div>
+    <div class="tempo-bloom tempo-bloom-b" data-bloom aria-hidden="true"></div>
+    <canvas class="tempo-rain" id="tempoRain" aria-hidden="true"></canvas>
+    <div class="tempo-copy">
+      <img class="tempo-mark" src="assets/brand/simbolo.png" width="248" height="246" alt="" data-rise>
+      <h2 id="tempo-title" data-rise>Existe um tempo que só a serra conhece.</h2>
+      <p data-rise>É o tempo da natureza que sobe do vale antes do café. Da água que corre sem pressa entre as pedras. Da chuva com cheiro de natureza. Da luz que muda de cor no fim da tarde e ninguém precisa fotografar para lembrar.</p>
+      <p data-rise>O Cerro Élégance nasceu para devolver esse tempo a você. Poucos bangalôs, desenhados para que a única coisa entre você e a paisagem seja uma janela.</p>
+      <p class="tempo-close" data-rise>Aqui, natureza não é cenário.<br>É o motivo.</p>
+    </div>
+  </section>
+
+  <section class="bangalo" id="bangalo" aria-labelledby="bangalo-title" data-reveal>
+    <div class="bangalo-inner">
+      <p class="bangalo-kicker">
+        <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+          <path d="M2.5 12.5 8 5.2l5.5 7.3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        O bangalô
+      </p>
+      <h2 id="bangalo-title">Feito para desaparecer na mata.<br class="bangalo-break"> E para você desaparecer nele.</h2>
+      <p class="bangalo-lead">Cada bangalô é uma casa só sua: telhado alto em forma de A, paredes de vidro voltadas para o verde e um deck suspenso sobre a mata. Por dentro, linhas limpas, madeira, linho e tons de terra. Nada que dispute atenção com a vista.</p>
+      <ul class="bangalo-grid">
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path d="M4.5 13.2h15"/>
+              <path d="M6.2 13.2c.3 3.5 2.6 5.3 5.8 5.3s5.5-1.8 5.8-5.3"/>
+              <path d="M8 13.2V9.8"/>
+              <path d="M6.7 9.8h2.6"/>
+              <path d="M14.2 7.6c.6-.8.6-1.6 0-2.4"/>
+              <path d="M16.8 7.6c.6-.8.6-1.6 0-2.4"/>
+            </svg>
+          </span>
+          <h3>Ofurô no deck</h3>
+          <p>Água quente ao ar livre, sob as copas e sob as estrelas.</p>
+        </li>
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path d="M7.5 4.8h9.2c.6 0 1 .4 1 1V19.2H6.5V5.8c0-.6.4-1 1-1z"/>
+              <path d="M14.6 12.2h.01"/>
+            </svg>
+          </span>
+          <h3>Privacidade total</h3>
+          <p>Bangalôs afastados entre si. Ninguém na sua vista, ninguém no seu silêncio.</p>
+        </li>
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path d="M4 17.5V12"/>
+              <path d="M20 17.5V12"/>
+              <path d="M4 14.5h16"/>
+              <path d="M4 17.5h16"/>
+              <path d="M7.5 14.5v-1.6c0-.7.6-1.3 1.3-1.3h2.2c.7 0 1.3.6 1.3 1.3v1.6"/>
+            </svg>
+          </span>
+          <h3>Cama que convida a ficar</h3>
+          <p>Enxoval de algodão e blackout para dormir até quando quiser.</p>
+        </li>
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <rect x="5" y="4.5" width="14" height="15" rx="1.5"/>
+              <path d="M8 15.6c1.6-1.8 3-2.4 4-1.4.9.8 2.2.5 3.6-1"/>
+            </svg>
+          </span>
+          <h3>Vista para a serra</h3>
+          <p>A janela que inspira o nosso símbolo, agora emoldurando o seu amanhecer.</p>
+        </li>
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path d="M12 4.2c.8 2.6-1 3.8-2 5.4-1.1 1.7-2 2.8-2 4.6a4 4 0 0 0 8 0c0-2-1.4-3.2-2.2-5"/>
+              <path d="M12 11.4c.5 1.1 0 2.1-.8 2.8"/>
+            </svg>
+          </span>
+          <h3>Conforto completo</h3>
+          <p>Ar-condicionado, cozinha/frigobar, cafeteira, Wi-Fi, lareira externa.</p>
+        </li>
+        <li>
+          <span class="bangalo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <circle cx="6.5" cy="12" r="1.7"/>
+              <circle cx="12" cy="12" r="1.7"/>
+              <circle cx="17.5" cy="12" r="1.7"/>
+            </svg>
+          </span>
+          <h3>Apenas 3 bangalôs</h3>
+          <p>Poucas unidades, de propósito. Exclusividade não é discurso; é uma conta.</p>
+        </li>
+      </ul>
+      <p class="bangalo-bridge">Você chega para dormir na serra.<br>Vai embora querendo morar nela.</p>
+    </div>
+  </section>
+
+  <section class="detalhes" id="detalhes" aria-labelledby="detalhes-title" data-reveal>
+    <div class="detalhes-inner">
+      <p class="detalhes-kicker">
+        <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+          <circle cx="8" cy="8" r="3.25"/>
+        </svg>
+        Os detalhes
+      </p>
+      <h2 id="detalhes-title">Elegância mora nos detalhes.<br class="detalhes-break"> Os nossos têm assinatura.</h2>
+      <p class="detalhes-lead">Do roupão de algodão à caneca esmaltada do café no deck, cada peça do Cerro Élégance foi pensada para o seu ritual de chegada. Amenities exclusivos com aromas inspirados no Cerrado, toalhas bordadas, chinelos e máscara de dormir para quem decidir que hoje o despertador é o sol.</p>
+      <div class="detalhes-gallery">
+        <figure>
+          <img src="assets/detalhes/ritual-do-banho.jpg" width="1200" height="1500" alt="Roupão de algodão, chinelos, máscara de dormir, toalhas e amenities com a marca Cerro Élégance." loading="lazy" decoding="async">
+          <figcaption>O ritual do banho.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/detalhes/cafe-na-mata.jpg" width="1200" height="1500" alt="Caneca esmaltada branca com a marca Cerro Élégance, sobre um tronco, com a mata ao fundo." loading="lazy" decoding="async">
+          <figcaption>O café que esfria devagar.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/detalhes/sono.jpg" width="1200" height="1500" alt="Aviso de porta do Cerro Élégance pendurado na maçaneta, para ninguém interromper o sono." loading="lazy" decoding="async">
+          <figcaption>O sono que ninguém interrompe.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="dia" id="dia" aria-labelledby="dia-title" data-reveal>
+    <div class="dia-inner">
+      <div class="dia-head">
+        <div>
+          <p class="dia-kicker">
+            <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+              <circle cx="8" cy="8" r="3.25"/>
+            </svg>
+            Um dia no Cerro
+          </p>
+          <h2 id="dia-title">Nenhuma agenda.<br>Só momentos.</h2>
+        </div>
+        <div class="dia-nav">
+          <button type="button" class="dia-prev" aria-label="Momento anterior">
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+              <path d="M13 8H3M7 4 3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="dia-next" aria-label="Próximo momento">
+            <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="dia-scroll" tabindex="0" aria-label="Momentos do dia. Role para o lado.">
+        <ol class="dia-track">
+          <li>
+            <p class="dia-time">6h30</p>
+            <img src="assets/dia/amanhecer.jpg" width="1600" height="613" alt="Vale verde e enevoado da serra, com a mata descendo até o campo." loading="lazy" decoding="async">
+            <h3>Amanhecer</h3>
+            <p>A neblina ainda está no vale. Você assiste da cama.</p>
+          </li>
+          <li>
+            <p class="dia-time">7h</p>
+            <img src="assets/dia/cafe-deck.jpg" width="1265" height="1400" alt="Bangalôs de telhado em A espalhados na mata, cada um no seu canto." loading="lazy" decoding="async">
+            <h3>Café no deck</h3>
+            <p>Sem horário, sem fila, sem pressa.</p>
+          </li>
+          <li>
+            <p class="dia-time">11h</p>
+            <img src="assets/dia/agua-fria.jpg" width="1309" height="1400" alt="Cachoeira caindo num poço cercado de mata." loading="lazy" decoding="async">
+            <h3>Água fria</h3>
+            <p>As cachoeiras da serra estão a minutos.</p>
+          </li>
+          <li>
+            <p class="dia-time">17h30</p>
+            <img class="dia-serra" src="assets/dia/hora-dourada.jpg" width="1400" height="875" alt="Vista da serra, com o paredão e o vale coberto de mata." loading="lazy" decoding="async">
+            <h3>Hora dourada</h3>
+            <p>A serra fica cor de cobre. O melhor lugar para ver é o seu deck.</p>
+          </li>
+          <li>
+            <p class="dia-time">21h</p>
+            <img src="assets/dia/ofuro.jpg" width="1324" height="1400" alt="Bangalô com ofurô no deck de madeira, suspenso sobre a mata." loading="lazy" decoding="async">
+            <h3>Ofurô e estrelas</h3>
+            <p>Longe da cidade, o céu volta a ser céu.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="lugar" id="lugar" aria-labelledby="lugar-title" data-reveal>
+    <div class="lugar-inner">
+      <p class="lugar-kicker">
+        <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true">
+          <path d="M8 14.4s4.2-3.6 4.2-6.5a4.2 4.2 0 1 0-8.4 0c0 2.9 4.2 6.5 4.2 6.5z"/>
+          <circle cx="8" cy="7.7" r="1.25"/>
+        </svg>
+        O lugar
+      </p>
+      <h2 id="lugar-title">Taquaruçu:<br>o segredo mais bem guardado do Tocantins.</h2>
+      <div class="lugar-corpo">
+        <div class="lugar-copy">
+          <p>A Serra de Taquaruçu é o lado serrano de Palmas: mais de 80 cachoeiras catalogadas, mirantes, trilhas, água fria e um clima mais ameno que o da capital. Um destino que muita gente ainda não conhece — e que nós escolhemos justamente por isso.</p>
+          <p>Você sai de Palmas e, meia hora depois, está em outro ritmo. Sem voo, sem conexão, sem perder o primeiro dia de folga na estrada.</p>
+        </div>
+        <figure class="lugar-foto">
+          <img src="assets/dia/hora-dourada.jpg" width="1400" height="875" alt="Vista aérea do chapadão da Serra de Taquaruçu, com o paredão e o vale coberto de mata." loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <ol class="lugar-rota" aria-label="De Palmas ao Cerro Élégance">
+        <li>
+          <span class="lugar-ponto" aria-hidden="true"></span>
+          <p class="lugar-nome">Palmas</p>
+          <p class="lugar-num">~30 min</p>
+          <p class="lugar-nota">do centro de Palmas</p>
+        </li>
+        <li>
+          <span class="lugar-ponto" aria-hidden="true"></span>
+          <p class="lugar-nome">Taquaruçu</p>
+          <p class="lugar-num">80+</p>
+          <p class="lugar-nota">cachoeiras na região</p>
+        </li>
+        <li>
+          <span class="lugar-ponto" aria-hidden="true"></span>
+          <p class="lugar-nome">Cerro Élégance</p>
+          <p class="lugar-num">3</p>
+          <p class="lugar-nota">bangalôs, apenas</p>
+        </li>
+      </ol>
+      <p class="lugar-fora">A porta de entrada do Jalapão merece uma pausa à altura. Comece ou termine sua expedição na serra.</p>
+    </div>
+  </section>
+
+  <section class="fundadores" id="fundadores" aria-labelledby="fundadores-title" data-reveal>
+    <div class="fundadores-shell">
+      <div class="fundadores-contagem">
+        <p class="fundadores-quando">10 de janeiro de 2027</p>
+        <p class="fundadores-leitura" id="fundadores-leitura" aria-live="polite"></p>
+        <div class="fundadores-relogio" aria-hidden="true">
+          <p><span data-unit="days">00</span><span data-label="days">dias</span></p>
+          <p><span data-unit="hours">00</span><span data-label="hours">horas</span></p>
+          <p><span data-unit="minutes">00</span><span data-label="minutes">minutos</span></p>
+          <p><span data-unit="seconds">00</span><span data-label="seconds">segundos</span></p>
+        </div>
+      </div>
+      <div class="fundadores-grid">
+        <div class="fundadores-copy">
+          <h2 id="fundadores-title">Os primeiros hóspedes da serra merecem chegar antes.</h2>
+          <p>Estamos preparando cada detalhe para abrir as portas em 15 de janeiro de 2027. Quem entrar na lista de fundadores recebe acesso antecipado ao calendário, antes da abertura ao público, e uma condição exclusiva na primeira estadia.</p>
+          <ul>
+            <li>Prioridade para escolher as primeiras datas</li>
+            <li>Noite cortesia e welcome drink</li>
+            <li>Convite para conhecer o Cerro antes da inauguração</li>
+          </ul>
+        </div>
+        <form class="fundadores-form" id="lista-fundadores" novalidate>
+          <div class="fundadores-field">
+            <label for="fundador-nome">Nome</label>
+            <input id="fundador-nome" name="nome" type="text" autocomplete="name" required aria-describedby="fundador-nome-erro">
+            <p class="fundadores-erro" id="fundador-nome-erro" hidden></p>
+          </div>
+          <div class="fundadores-field">
+            <label for="fundador-whatsapp">WhatsApp</label>
+            <input id="fundador-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="fundador-whatsapp-erro">
+            <p class="fundadores-erro" id="fundador-whatsapp-erro" hidden></p>
+          </div>
+          <div class="fundadores-field">
+            <label for="fundador-email">E-mail</label>
+            <input id="fundador-email" name="email" type="email" autocomplete="email" required aria-describedby="fundador-email-erro">
+            <p class="fundadores-erro" id="fundador-email-erro" hidden></p>
+          </div>
+          <fieldset class="fundadores-momento">
+            <legend>Que momento você quer viver no Cerro?</legend>
+            <div class="fundadores-opcoes">
+              <label><input type="radio" name="momento" value="Aniversário" required> Aniversário</label>
+              <label><input type="radio" name="momento" value="Lua de mel"> Lua de mel</label>
+              <label><input type="radio" name="momento" value="Descanso"> Descanso</label>
+              <label><input type="radio" name="momento" value="Outro"> Outro</label>
+            </div>
+            <p class="fundadores-erro" id="fundador-momento-erro" hidden></p>
+          </fieldset>
+          <div class="fundadores-field" id="fundador-outro-campo" hidden>
+            <label for="fundador-outro">Qual momento?</label>
+            <input id="fundador-outro" name="outro" type="text" maxlength="80" aria-describedby="fundador-outro-erro">
+            <p class="fundadores-erro" id="fundador-outro-erro" hidden></p>
+          </div>
+          <button class="btn fundadores-enviar" type="submit">Entrar na lista de fundadores</button>
+          <p class="fundadores-status" id="fundadores-status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fecho" id="fecho" data-reveal>
+    <canvas class="fecho-petalas" id="fechoPetalas" aria-hidden="true"></canvas>
+    <div class="fecho-bloom" aria-hidden="true"></div>
+    <div class="fecho-cta">
+      <h2 id="fecho-title">A vista já está pronta.<br>Falta você.</h2>
+      <a class="btn fecho-pre" href="#fundadores">
+        Quero ser um dos primeiros
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <a class="btn fecho-pos" href="#reserva" hidden>
+        Reserve o seu refúgio
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+          <path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p class="fecho-linha">Prefere conversar? <a class="fecho-zap" data-contato="whatsapp">Fale com a gente pelo WhatsApp.</a></p>
+    </div>
+    <div class="fecho-identidade">
+      <p class="fecho-nome">Cerro Élégance — Bangalôs &amp; Natureza</p>
+      <p>Um refúgio para contemplar, desacelerar e se conectar.</p>
+      <p>Serra de Taquaruçu · Palmas · Tocantins</p>
+    </div>
+    <div class="fecho-bar">
+      <a class="fecho-brand" href="#topo">
+        <span class="brand-mark fecho-mark" aria-hidden="true"><span></span><span></span></span>
+        Cerro Élégance
+      </a>
+      <nav class="fecho-nav" aria-label="Contato">
+        <a data-contato="instagram">Instagram</a>
+        <a data-contato="whatsapp">WhatsApp</a>
+        <a data-contato="email">E-mail</a>
+        <span>CNPJ/Cadastur</span>
+      </nav>
+      <p class="fecho-copy">© 2026 Cerro Élégance</p>
+    </div>
+  </footer>
+
+  <a class="zap" data-contato="whatsapp">
+    <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
+      <path d="M3 12.5 3.8 10A5.2 5.2 0 1 1 6.2 12.4L3 12.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </svg>
+    Fale com o Cerro
+  </a>
+
+  <script src="js/hero.js"></script>
+  <script src="js/tempo.js"></script>
+  <script src="js/dia.js"></script>
+  <script src="js/fundadores.js"></script>
+  <script src="js/fecho.js"></script>
+</body>
+</html>

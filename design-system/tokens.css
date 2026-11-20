@@ -1,0 +1,52 @@
+/* Cerro Élégance — tokens
+   Papéis do TerraSprint, com a paleta do cliente.
+   Primária, secundária, terciária e quaternária entram onde o sistema já tinha
+   um verde, um bege, um marrom e um offwhite. Tinta, grafite e branco ficam:
+   sustentam tipo e sombra. O oliva escuro é a primária aprofundada, para o
+   botão e o card em destaque continuarem com profundidade. */
+
+:root {
+  --color-primary: #657159;
+  --color-primary-rgb: 101, 113, 89;
+  --color-olive: #3F4436;
+  --color-olive-rgb: 63, 68, 54;
+  --color-olive-deep: #3A3E32;
+  --color-secondary: #BFB091;
+  --color-secondary-rgb: 191, 176, 145;
+  --color-tertiary: #8B5F40;
+  --color-tertiary-rgb: 139, 95, 64;
+  --color-quaternary: #ECE9DF;
+  --color-shell: #F7F5EF;
+  --color-well: #F1EDE6;
+  --color-ink: #232427;
+  --color-ink-soft: #171719;
+  --color-graphite: #2E3034;
+  --color-graphite-rgb: 46, 48, 52;
+  --color-white: #ffffff;
+
+  --gradient-button: linear-gradient(var(--color-primary) 0%, var(--color-olive) 55%);
+  --gradient-featured: linear-gradient(var(--color-primary) 0%, var(--color-olive) 70%);
+  --gradient-primary-wash: linear-gradient(180deg, #e4e2d7, #d4d3c7);
+  --gradient-sand: linear-gradient(180deg, #e8e3d7, #dad2c0);
+  --gradient-porcelain: linear-gradient(180deg, #ffffff, var(--color-well));
+  --gradient-sand-panel: linear-gradient(150deg, #e7e1d6, #d3cab4);
+  --gradient-clay-panel: linear-gradient(150deg, #e4ded2, #d3c5b6);
+  --gradient-primary-panel: linear-gradient(150deg, #deddd2, #ccccbf);
+
+  --font-display: "Fraunces", "Source Serif 4", Georgia, serif;
+  --font-ui: "Manrope", sans-serif;
+  --font-input: "Geist", Inter, sans-serif;
+
+  --radius-shell: 40px;
+  --radius-card: 24px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.9) inset, 0 14px 28px -18px rgba(35, 36, 39, 0.25);
+  --shadow-button: rgba(255, 255, 255, 0.24) 0 1px 0 inset, rgba(0, 0, 0, 0.35) 0 -3px 8px inset, rgba(23, 23, 25, 0.55) 0 16px 30px -12px;
+
+  --ds-ink: var(--color-ink);
+  --ds-graphite: rgb(var(--color-graphite-rgb));
+  --ds-green: rgb(var(--color-primary-rgb));
+  --ds-deep: var(--color-primary);
+  --ds-ground: var(--color-quaternary);
+  --ds-shell: var(--color-shell);
+}
