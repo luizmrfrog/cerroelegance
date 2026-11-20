@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (hover: none), (pointer: coarse) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   min-height: 100svh;
@@ -409,7 +415,7 @@ h1 {
 }
 
 .js .tempo.is-in .tempo-copy > * {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .tempo.is-in .tempo-copy > *:nth-child(2) { animation-delay: 90ms; }
@@ -422,6 +428,16 @@ h1 {
     opacity: 1;
     transform: none;
   }
+}
+
+.reveal-word {
+  display: inline-block;
+}
+
+.js .scroll-reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
 }
 
 @media (max-width: 760px) {
@@ -590,7 +606,7 @@ h1 {
 .js .bangalo.is-in .bangalo-lead,
 .js .bangalo.is-in .bangalo-grid > li,
 .js .bangalo.is-in .bangalo-bridge {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .bangalo.is-in .bangalo-inner > h2 { animation-delay: 90ms; }
@@ -730,7 +746,7 @@ h1 {
 .js .detalhes.is-in .detalhes-inner > h2,
 .js .detalhes.is-in .detalhes-lead,
 .js .detalhes.is-in .detalhes-gallery figure {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .detalhes.is-in .detalhes-inner > h2 { animation-delay: 90ms; }
@@ -977,7 +993,7 @@ h1 {
 .js .dia.is-in .dia-head h2,
 .js .dia.is-in .dia-nav,
 .js .dia.is-in .dia-scroll {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .dia.is-in .dia-head h2 { animation-delay: 90ms; }
@@ -1209,7 +1225,7 @@ h1 {
 .js .lugar.is-in .lugar-foto,
 .js .lugar.is-in .lugar-rota,
 .js .lugar.is-in .lugar-fora {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .lugar.is-in .lugar-inner > h2 { animation-delay: 90ms; }
@@ -1331,23 +1347,24 @@ h1 {
 }
 
 .fundadores-relogio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.15rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  justify-content: start;
+  column-gap: clamp(0.7rem, 3.2vw, 1.5rem);
   margin-top: 0.85rem;
 }
 
 .fundadores-relogio p {
   display: grid;
   gap: 0.25rem;
-  min-width: 4.2rem;
+  min-width: 0;
   margin: 0;
 }
 
 .fundadores-relogio [data-unit] {
   color: var(--color-quaternary);
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.65rem, 7.2vw, 3.2rem);
   font-weight: 300;
   font-variant-numeric: tabular-nums;
   letter-spacing: -0.03em;
@@ -1356,14 +1373,14 @@ h1 {
 
 .fundadores-relogio [data-label] {
   color: var(--color-quaternary);
-  font-size: 0.75rem;
+  font-size: clamp(0.625rem, 2.5vw, 0.75rem);
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .fundadores-grid {
   display: grid;
-  gap: 2.25rem;
-  margin-top: 2.75rem;
+  gap: 2.75rem;
 }
 
 .fundadores h2 {
@@ -1587,19 +1604,19 @@ h1 {
 }
 
 .js .fundadores:not(.is-in) .fundadores-contagem,
-.js .fundadores:not(.is-in) .fundadores-copy,
+.js .fundadores:not(.is-in) .fundadores-copy > :not(.scroll-reveal),
 .js .fundadores:not(.is-in) .fundadores-form {
   opacity: 0;
   transform: translateY(14px);
 }
 
 .js .fundadores.is-in .fundadores-contagem,
-.js .fundadores.is-in .fundadores-copy,
+.js .fundadores.is-in .fundadores-copy > :not(.scroll-reveal),
 .js .fundadores.is-in .fundadores-form {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
-.js .fundadores.is-in .fundadores-copy { animation-delay: 90ms; }
+.js .fundadores.is-in .fundadores-copy > :not(.scroll-reveal) { animation-delay: 90ms; }
 .js .fundadores.is-in .fundadores-form { animation-delay: 180ms; }
 
 @media (min-width: 768px) {
@@ -1611,8 +1628,24 @@ h1 {
 @media (min-width: 960px) {
   .fundadores-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.9fr);
-    gap: 3rem;
+    grid-template-areas:
+      "count form"
+      "copy form";
+    column-gap: 3rem;
+    row-gap: 2.75rem;
     align-items: start;
+  }
+
+  .fundadores-contagem {
+    grid-area: count;
+  }
+
+  .fundadores-copy {
+    grid-area: copy;
+  }
+
+  .fundadores-form {
+    grid-area: form;
   }
 }
 
@@ -1799,17 +1832,17 @@ h1 {
   outline-offset: 3px;
 }
 
-.js .fecho:not(.is-in) .fecho-cta,
+.js .fecho:not(.is-in) .fecho-cta > :not(.scroll-reveal),
 .js .fecho:not(.is-in) .fecho-identidade,
 .js .fecho:not(.is-in) .fecho-bar {
   opacity: 0;
   transform: translateY(14px);
 }
 
-.js .fecho.is-in .fecho-cta,
+.js .fecho.is-in .fecho-cta > :not(.scroll-reveal),
 .js .fecho.is-in .fecho-identidade,
 .js .fecho.is-in .fecho-bar {
-  animation: tempo-rise 0.8s ease-out forwards;
+  animation: tempo-rise 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
 }
 
 .js .fecho.is-in .fecho-identidade { animation-delay: 90ms; }
@@ -1829,6 +1862,12 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .reveal-word {
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
   }
 
   .tempo-bloom {
@@ -1902,15 +1941,15 @@ h1 {
   }
 
   .js .fundadores:not(.is-in) .fundadores-contagem,
-  .js .fundadores:not(.is-in) .fundadores-copy,
+  .js .fundadores:not(.is-in) .fundadores-copy > :not(.scroll-reveal),
   .js .fundadores:not(.is-in) .fundadores-form,
   .js .fundadores.is-in .fundadores-contagem,
-  .js .fundadores.is-in .fundadores-copy,
+  .js .fundadores.is-in .fundadores-copy > :not(.scroll-reveal),
   .js .fundadores.is-in .fundadores-form,
-  .js .fecho:not(.is-in) .fecho-cta,
+  .js .fecho:not(.is-in) .fecho-cta > :not(.scroll-reveal),
   .js .fecho:not(.is-in) .fecho-identidade,
   .js .fecho:not(.is-in) .fecho-bar,
-  .js .fecho.is-in .fecho-cta,
+  .js .fecho.is-in .fecho-cta > :not(.scroll-reveal),
   .js .fecho.is-in .fecho-identidade,
   .js .fecho.is-in .fecho-bar {
     opacity: 1;

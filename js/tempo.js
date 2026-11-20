@@ -9,7 +9,7 @@ if (section && !reduceMotion.matches && "IntersectionObserver" in window) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) section.classList.add("is-in");
     });
-  }, { threshold: 0.18 });
+  }, { threshold: 0.12 });
   reveal.observe(section);
 } else if (section) {
   section.classList.add("is-in");
@@ -24,7 +24,7 @@ document.querySelectorAll("[data-reveal]").forEach((block) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) block.classList.add("is-in");
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12 });
   watch.observe(block);
 });
 
