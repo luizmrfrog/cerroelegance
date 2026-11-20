@@ -1322,9 +1322,16 @@ h1 {
 }
 
 .fundadores-contagem,
+.fundadores-lado,
 .fundadores-grid {
   position: relative;
   z-index: 1;
+}
+
+.fundadores-lado {
+  display: grid;
+  gap: 2.75rem;
+  align-content: start;
 }
 
 .fundadores-quando {
@@ -1628,24 +1635,8 @@ h1 {
 @media (min-width: 960px) {
   .fundadores-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.9fr);
-    grid-template-areas:
-      "count form"
-      "copy form";
     column-gap: 3rem;
-    row-gap: 2.75rem;
     align-items: start;
-  }
-
-  .fundadores-contagem {
-    grid-area: count;
-  }
-
-  .fundadores-copy {
-    grid-area: copy;
-  }
-
-  .fundadores-form {
-    grid-area: form;
   }
 }
 
