@@ -208,8 +208,8 @@ body {
 .hero-veil {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 78% 68% at 50% 46%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.2) 72%);
+  background: #000;
+  opacity: 0.5;
 }
 
 .hero-copy {
