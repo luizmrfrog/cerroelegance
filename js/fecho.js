@@ -1,8 +1,8 @@
 (() => {
   const contato = {
     whatsapp: "",
-    instagram: "",
-    email: "",
+    instagram: "https://www.instagram.com/cerroelegance/",
+    email: "contato@cerroelegance.com.br",
   };
 
   const mensagem = "Olá! Vim pelo site e quero saber mais sobre o Cerro Élégance.";

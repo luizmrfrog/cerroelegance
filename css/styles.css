@@ -1927,6 +1927,26 @@ h1 {
   text-decoration: none;
 }
 
+.fecho-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.fecho-nav svg {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fecho-nav svg .dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 .fecho-nav a[href]:hover {
   color: var(--color-ink);
 }
