@@ -33,6 +33,7 @@
   --gradient-clay-panel: linear-gradient(150deg, #e4ded2, #d3c5b6);
   --gradient-primary-panel: linear-gradient(150deg, #deddd2, #ccccbf);
 
+  --font-brand: "Royale Milano", Georgia, serif;
   --font-display: "Fraunces", "Source Serif 4", Georgia, serif;
   --font-ui: "Manrope", sans-serif;
   --font-input: "Geist", Inter, sans-serif;
@@ -49,4 +50,20 @@
   --ds-deep: var(--color-primary);
   --ds-ground: var(--color-quaternary);
   --ds-shell: var(--color-shell);
+}
+
+@font-face {
+  font-family: "Royale Milano";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/royale-milano-demo/RoyaleMilano-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Royale Milano";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/royale-milano-demo/RoyaleMilano-RegularItalic.otf") format("opentype");
 }

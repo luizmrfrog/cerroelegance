@@ -91,6 +91,16 @@ body {
   text-decoration: none;
 }
 
+.brand-name {
+  font-family: var(--font-brand);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0.01em;
+  line-height: 1;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -240,11 +250,13 @@ body {
 h1 {
   margin: 0.9rem 0 0;
   color: var(--color-quaternary);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.35rem, 5.4vw, 4.6rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.02;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.08;
 }
 
 .lead {
@@ -303,7 +315,7 @@ h1 {
   }
 
   .brand-name {
-    font-size: 0.8125rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -378,13 +390,15 @@ h1 {
 
 .tempo h2 {
   margin: 2rem 0 0;
-  max-width: 8em;
+  max-width: 9em;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4.4vw, 3.35rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.12;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.16;
 }
 
 .tempo-copy p {
@@ -502,13 +516,15 @@ h1 {
 
 .bangalo h2 {
   margin: 1.35rem 0 0;
-  max-width: 14em;
+  max-width: 16em;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4.2vw, 3.6rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.14;
 }
 
 .bangalo-lead {
@@ -682,13 +698,15 @@ h1 {
 
 .detalhes h2 {
   margin: 1.35rem 0 0;
-  max-width: 12em;
+  max-width: 14em;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4.2vw, 3.6rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.14;
 }
 
 .detalhes-lead {
@@ -832,11 +850,13 @@ h1 {
 .dia h2 {
   margin: 1.35rem 0 0;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4.2vw, 3.6rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.14;
 }
 
 .dia-nav {
@@ -1076,14 +1096,16 @@ h1 {
 }
 
 .lugar h2 {
-  max-width: 12em;
+  max-width: 14em;
   margin: 1.35rem 0 0;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4.2vw, 3.6rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.14;
 }
 
 .lugar-corpo {
@@ -1538,14 +1560,16 @@ h1 {
 }
 
 .fundadores h2 {
-  max-width: 11em;
+  max-width: 13em;
   margin: 0;
   color: var(--color-quaternary);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.15rem, 4vw, 3.4rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.08;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.14;
 }
 
 .fundadores-copy > p {
@@ -1835,11 +1859,13 @@ h1 {
 .fecho h2 {
   margin: 0;
   color: var(--color-ink);
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-size: clamp(2.25rem, 5.5vw, 4.25rem);
-  font-weight: 300;
-  letter-spacing: -0.03em;
-  line-height: 1.02;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0;
+  line-height: 1.12;
 }
 
 .fecho-cta .btn {
@@ -1880,10 +1906,13 @@ h1 {
 .fecho-identidade .fecho-nome {
   margin-top: 0;
   color: var(--color-ink);
-  font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  font-weight: 300;
-  letter-spacing: -0.02em;
+  font-family: var(--font-brand);
+  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0.01em;
+  line-height: 1.2;
 }
 
 .fecho-bar {
@@ -1902,8 +1931,13 @@ h1 {
   align-items: center;
   gap: 0.6rem;
   color: var(--color-ink);
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-family: var(--font-brand);
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+  letter-spacing: 0.01em;
+  line-height: 1;
   text-decoration: none;
 }
 
